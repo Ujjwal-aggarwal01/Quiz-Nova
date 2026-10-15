@@ -1,0 +1,13 @@
+# Dependency folders
+node_modules/
+
+# Environment and sensitive credential files
+.env
+
+# Compressed archives
+*.zip
+quiznova.zip.zip
+
+# System files
+.DS_Store
+Thumbs.db
