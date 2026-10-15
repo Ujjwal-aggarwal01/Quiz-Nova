@@ -1,0 +1,257 @@
+[
+  {
+    "question": "What does CPU stand for?",
+    "options": ["Central Processing Unit", "Computer Personal Unit", "Central Program Utility", "Control Processing Unit"],
+    "answer": "Central Processing Unit"
+  },
+  {
+    "question": "Which of the following is a programming language?",
+    "options": ["Python", "HTML", "HTTP", "URL"],
+    "answer": "Python"
+  },
+  {
+    "question": "Which symbol is commonly used to end a statement in C?",
+    "options": [";", ":", ".", ","],
+    "answer": ";"
+  },
+  {
+    "question": "Which function is the starting point of a C program?",
+    "options": ["start()", "main()", "begin()", "run()"],
+    "answer": "main()"
+  },
+  {
+    "question": "Which keyword is used to declare an integer variable in C?",
+    "options": ["integer", "int", "num", "number"],
+    "answer": "int"
+  },
+  {
+    "question": "Which data type is used to store a single character in C?",
+    "options": ["char", "string", "character", "text"],
+    "answer": "char"
+  },
+  {
+    "question": "Which data type is commonly used to store decimal numbers in C?",
+    "options": ["int", "float", "char", "void"],
+    "answer": "float"
+  },
+  {
+    "question": "Which operator is used for addition?",
+    "options": ["+", "-", "*", "/"],
+    "answer": "+"
+  },
+  {
+    "question": "Which operator is used for multiplication?",
+    "options": ["+", "-", "*", "%"],
+    "answer": "*"
+  },
+  {
+    "question": "Which operator gives the remainder after division in C?",
+    "options": ["/", "%", "//", "&"],
+    "answer": "%"
+  },
+  {
+    "question": "What is the value of 10 % 3?",
+    "options": ["0", "1", "2", "3"],
+    "answer": "1"
+  },
+  {
+    "question": "Which keyword is used to make a variable constant in C?",
+    "options": ["constant", "const", "fixed", "static"],
+    "answer": "const"
+  },
+  {
+    "question": "Which statement is used to make a decision in C?",
+    "options": ["if", "loop", "switching", "repeat"],
+    "answer": "if"
+  },
+  {
+    "question": "Which statement is used when there are multiple possible cases?",
+    "options": ["if", "switch", "loop", "goto"],
+    "answer": "switch"
+  },
+  {
+    "question": "Which loop executes its body at least once?",
+    "options": ["for", "while", "do-while", "nested loop"],
+    "answer": "do-while"
+  },
+  {
+    "question": "Which loop is commonly used when the number of iterations is known?",
+    "options": ["for loop", "while loop", "do-while loop", "switch"],
+    "answer": "for loop"
+  },
+  {
+    "question": "Which keyword is used to exit a loop immediately?",
+    "options": ["stop", "exit", "break", "end"],
+    "answer": "break"
+  },
+  {
+    "question": "Which keyword skips the current iteration of a loop?",
+    "options": ["skip", "continue", "pass", "next"],
+    "answer": "continue"
+  },
+  {
+    "question": "Which operator is used to assign a value to a variable?",
+    "options": ["==", "=", "!=", ">="],
+    "answer": "="
+  },
+  {
+    "question": "Which operator checks whether two values are equal?",
+    "options": ["=", "==", "!=", "==="],
+    "answer": "=="
+  },
+  {
+    "question": "What is the value of x after int x = 5; x = 10;?",
+    "options": ["5", "10", "15", "0"],
+    "answer": "10"
+  },
+  {
+    "question": "Which symbol is used for a single-line comment in C?",
+    "options": ["//", "/*", "#", "--"],
+    "answer": "//"
+  },
+  {
+    "question": "Which symbols are used for a multi-line comment in C?",
+    "options": ["// and //", "/* and */", "<!-- and -->", "# and #"],
+    "answer": "/* and */"
+  },
+  {
+    "question": "Which header file is commonly used for printf() in C?",
+    "options": ["stdio.h", "stdlib.h", "string.h", "math.h"],
+    "answer": "stdio.h"
+  },
+  {
+    "question": "Which function is used to display output in C?",
+    "options": ["scanf()", "printf()", "print()", "display()"],
+    "answer": "printf()"
+  },
+  {
+    "question": "Which function is used to take formatted input in C?",
+    "options": ["input()", "scanf()", "read()", "get()"],
+    "answer": "scanf()"
+  },
+  {
+    "question": "Which function is commonly used to display output in Python?",
+    "options": ["printf()", "display()", "print()", "output()"],
+    "answer": "print()"
+  },
+  {
+    "question": "Which function is commonly used to take input in Python?",
+    "options": ["scanf()", "input()", "read()", "get()"],
+    "answer": "input()"
+  },
+  {
+    "question": "Which symbol is used for a comment in Python?",
+    "options": ["//", "#", "/*", "--"],
+    "answer": "#"
+  },
+  {
+    "question": "Which of these is a valid Python variable name?",
+    "options": ["2name", "my-name", "my_name", "class"],
+    "answer": "my_name"
+  },
+  {
+    "question": "What is the output of Python expression 5 + 3?",
+    "options": ["6", "7", "8", "9"],
+    "answer": "8"
+  },
+  {
+    "question": "What is the output of Python expression 10 // 3?",
+    "options": ["2", "3", "3.33", "1"],
+    "answer": "3"
+  },
+  {
+    "question": "What is the output of Python expression 10 % 3?",
+    "options": ["0", "1", "2", "3"],
+    "answer": "1"
+  },
+  {
+    "question": "Which data type stores True or False in Python?",
+    "options": ["int", "bool", "str", "float"],
+    "answer": "bool"
+  },
+  {
+    "question": "Which data type is used to store text in Python?",
+    "options": ["str", "text", "char", "string"],
+    "answer": "str"
+  },
+  {
+    "question": "Which collection in Python is ordered and changeable?",
+    "options": ["tuple", "list", "set", "dictionary"],
+    "answer": "list"
+  },
+  {
+    "question": "Which collection in Python is ordered and immutable?",
+    "options": ["list", "set", "tuple", "dictionary"],
+    "answer": "tuple"
+  },
+  {
+    "question": "Which Python collection stores key-value pairs?",
+    "options": ["list", "tuple", "dictionary", "set"],
+    "answer": "dictionary"
+  },
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["function", "def", "fun", "define"],
+    "answer": "def"
+  },
+  {
+    "question": "Which keyword is used to return a value from a Python function?",
+    "options": ["send", "return", "give", "output"],
+    "answer": "return"
+  },
+  {
+    "question": "Which operator is used for exponentiation in Python?",
+    "options": ["^", "**", "//", "^^"],
+    "answer": "**"
+  },
+  {
+    "question": "What is the result of 2 ** 3 in Python?",
+    "options": ["5", "6", "8", "9"],
+    "answer": "8"
+  },
+  {
+    "question": "Which keyword is used to create a class in Python?",
+    "options": ["object", "class", "struct", "define"],
+    "answer": "class"
+  },
+  {
+    "question": "What does OOP stand for?",
+    "options": ["Object-Oriented Programming", "Object Operating Program", "Ordered Object Programming", "Open Object Process"],
+    "answer": "Object-Oriented Programming"
+  },
+  {
+    "question": "Which concept allows a class to acquire properties of another class?",
+    "options": ["Encapsulation", "Inheritance", "Abstraction", "Compilation"],
+    "answer": "Inheritance"
+  },
+  {
+    "question": "Which concept hides internal implementation details?",
+    "options": ["Inheritance", "Abstraction", "Iteration", "Compilation"],
+    "answer": "Abstraction"
+  },
+  {
+    "question": "Which concept combines data and methods inside a class?",
+    "options": ["Encapsulation", "Inheritance", "Iteration", "Recursion"],
+    "answer": "Encapsulation"
+  },
+  {
+    "question": "What is a variable used to store the address of another variable called in C?",
+    "options": ["Pointer", "Array", "Structure", "Reference"],
+    "answer": "Pointer"
+  },
+  {
+    "question": "Which symbol is used to declare a pointer in C?",
+    "options": ["&", "*", "#", "%"],
+    "answer": "*"
+  },
+  {
+    "question": "Which operator gives the address of a variable in C?",
+    "options": ["*", "&", "@", "#"],
+    "answer": "&"
+  },
+  {
+    "question": "Which data structure stores elements in contiguous memory locations?",
+    "options": ["Linked list", "Array", "Tree", "Graph"],
+    "answer": "Array"
+  }
+]

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizNova - Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+
+    <h2>QuizNova</h2>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+    </div>
+
+</nav>
+
+<div class="form-container">
+
+    <h1>Create Account</h1>
+
+    <form id="signupForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+        >
+
+        <button type="submit">
+            Sign Up
+        </button>
+
+    </form>
+
+    <p id="message"></p>
+
+</div>
+
+<script>
+
+document.getElementById("signupForm").addEventListener(
+    "submit",
+    async function(event) {
+
+        event.preventDefault();
+
+        const name =
+            document.getElementById("name").value;
+
+        const email =
+            document.getElementById("email").value;
+
+        const password =
+            document.getElementById("password").value;
+
+        const message =
+            document.getElementById("message");
+
+        try {
+
+            const response = await fetch(
+                "/api/signup",
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        password: password
+                    })
+                }
+            );
+
+            const data =
+                await response.json();
+
+            if (response.ok) {
+
+                message.textContent =
+                    "Signup successful! Redirecting to login...";
+
+                setTimeout(function() {
+
+                    window.location.href =
+                        "login.html";
+
+                }, 1000);
+
+            } else {
+
+                message.textContent =
+                    data.message;
+
+            }
+
+        } catch (error) {
+
+            message.textContent =
+                "Unable to connect to server.";
+
+        }
+
+    }
+
+);
+
+</script>
+
+</body>
+</html>

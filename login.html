@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizNova - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🧠 QuizNova
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="category.html">Categories</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="about.html">About</a>
+    </nav>
+
+</header>
+
+<div class="form-container">
+
+    <h1>Login</h1>
+
+    <form id="loginForm">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+        >
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <p>
+        Don't have an account?
+        <a href="signup.html">Sign Up</a>
+    </p>
+
+</div>
+
+<script>
+
+document.getElementById("loginForm").addEventListener(
+    "submit",
+    async function(event) {
+
+        event.preventDefault();
+
+        const email =
+            document.getElementById("email").value;
+
+        const password =
+            document.getElementById("password").value;
+
+        const message =
+            document.getElementById("message");
+
+        try {
+
+            const response = await fetch(
+                "/api/login",
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        email: email,
+                        password: password
+                    })
+                }
+            );
+
+            const data =
+                await response.json();
+
+            if (response.ok) {
+
+                localStorage.setItem(
+                    "isLoggedIn",
+                    "true"
+                );
+
+                localStorage.setItem(
+                    "userName",
+                    data.user.name
+                );
+
+                localStorage.setItem(
+                    "userEmail",
+                    data.user.email
+                );
+
+                localStorage.setItem(
+                    "userId",
+                    data.user.id
+                );
+
+                message.textContent =
+                    "Login successful!";
+
+                setTimeout(function() {
+
+                    window.location.href =
+                        "category.html";
+
+                }, 700);
+
+            } else {
+
+                message.textContent =
+                    data.message;
+
+            }
+
+        } catch (error) {
+
+            message.textContent =
+                "Unable to connect to server.";
+
+        }
+
+    }
+
+);
+
+</script>
+
+</body>
+</html>

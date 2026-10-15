@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizNova - Leaderboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🧠 QuizNova
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="category.html">Categories</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+</header>
+
+<section class="leaderboard-section">
+
+    <h1>🏆 Leaderboard</h1>
+
+    <p>Top QuizNova Players</p>
+
+    <div id="myBestScore"></div>
+
+    <div id="leaderboard">
+        <p>Loading leaderboard...</p>
+    </div>
+
+    <button onclick="window.location.href='category.html'">
+        🎯 Take a Quiz
+    </button>
+
+</section>
+
+<script>
+
+const leaderboardElement =
+    document.getElementById("leaderboard");
+
+const myBestScoreElement =
+    document.getElementById("myBestScore");
+
+const currentUserId =
+    Number(localStorage.getItem("userId"));
+
+
+function loadLeaderboard() {
+
+    fetch("/api/leaderboard")
+
+        .then(function(response) {
+
+            if (!response.ok) {
+
+                throw new Error(
+                    "Leaderboard could not be loaded"
+                );
+
+            }
+
+            return response.json();
+
+        })
+
+        .then(function(players) {
+
+            let currentUserBest = null;
+
+            if (currentUserId) {
+
+                currentUserBest =
+                    players.find(function(player) {
+
+                        return player.id === currentUserId;
+
+                    });
+
+            }
+
+            if (currentUserBest) {
+
+                myBestScoreElement.innerHTML = `
+                    <div class="my-score">
+                        <h2>⭐ Your Best Score</h2>
+
+                        <p>
+                            ${currentUserBest.score}/${currentUserBest.total}
+                            (${currentUserBest.percentage}%)
+                        </p>
+                    </div>
+                `;
+
+            } else {
+
+                myBestScoreElement.innerHTML = `
+                    <div class="my-score">
+                        <h2>⭐ Your Best Score</h2>
+
+                        <p>
+                            You haven't completed a quiz yet.
+                        </p>
+                    </div>
+                `;
+
+            }
+
+
+            if (players.length === 0) {
+
+                leaderboardElement.innerHTML = `
+                    <h2>🏆 No scores yet</h2>
+                    <p>
+                        Be the first to take a quiz!
+                    </p>
+                `;
+
+                return;
+
+            }
+
+
+            leaderboardElement.innerHTML = `
+                <div class="leaderboard-row heading">
+
+                    <span>Rank</span>
+
+                    <span>Player</span>
+
+                    <span>Score</span>
+
+                </div>
+            `;
+
+
+            players.forEach(function(player, index) {
+
+                const rank = index + 1;
+
+                let medal = "";
+
+                if (rank === 1) {
+
+                    medal = "🥇";
+
+                }
+
+                else if (rank === 2) {
+
+                    medal = "🥈";
+
+                }
+
+                else if (rank === 3) {
+
+                    medal = "🥉";
+
+                }
+
+
+                leaderboardElement.innerHTML += `
+
+                    <div class="leaderboard-row">
+
+                        <span>
+                            ${medal} ${rank}
+                        </span>
+
+                        <span>
+                            ${player.name || "Player"}
+                        </span>
+
+                        <span>
+                            ${player.score}/${player.total}
+                            (${player.percentage}%)
+                        </span>
+
+                    </div>
+
+                `;
+
+            });
+
+        })
+
+        .catch(function(error) {
+
+            console.log(error);
+
+            leaderboardElement.innerHTML = `
+                <h2>⚠️ Unable to load leaderboard</h2>
+                <p>Please try again.</p>
+            `;
+
+        });
+
+}
+
+
+loadLeaderboard();
+
+</script>
+
+</body>
+
+</html>

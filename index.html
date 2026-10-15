@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizNova - Test Your Knowledge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🧠 QuizNova
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="category.html">Categories</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="about.html">About</a>
+        <span id="userSection"></span>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <h1>Challenge Your Mind, Master Your Skills</h1>
+
+    <p>
+        Practice quizzes, improve your knowledge,
+        and track your learning journey with QuizNova.
+    </p>
+
+    <button onclick="startQuiz()">
+        Start Quiz
+    </button>
+
+    <button class="explore" onclick="startQuiz()">
+        Explore Categories
+    </button>
+
+</section>
+
+<section class="categories">
+
+    <h2>Explore Quiz Categories</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Programming</h3>
+            <p>C, C++, Python, Java</p>
+        </div>
+
+        <div class="card">
+            <h3>Computer Science</h3>
+            <p>DSA, DBMS, OS, Networks</p>
+        </div>
+
+        <div class="card">
+            <h3>Mathematics</h3>
+            <p>Engineering Maths, Aptitude</p>
+        </div>
+
+        <div class="card">
+            <h3>General Knowledge</h3>
+            <p>Science, World, Current Affairs</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 QuizNova | Learn. Practice. Improve.</p>
+</footer>
+
+<script>
+
+const userSection =
+    document.getElementById("userSection");
+
+const isLoggedIn =
+    localStorage.getItem("isLoggedIn");
+
+const userName =
+    localStorage.getItem("userName");
+
+if (isLoggedIn === "true" && userName) {
+
+    userSection.innerHTML =
+        "👤 " + userName +
+        ' <button onclick="logout()">Logout</button>';
+
+} else {
+
+    userSection.innerHTML =
+        '<a href="login.html">Login</a>';
+
+}
+
+function logout() {
+
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("userName");
+    localStorage.removeItem("userEmail");
+
+    window.location.href = "index.html";
+}
+
+function startQuiz() {
+
+    const isLoggedIn =
+        localStorage.getItem("isLoggedIn");
+
+    if (isLoggedIn !== "true") {
+
+        alert("Please login first to start the quiz.");
+
+        window.location.href = "login.html";
+
+        return;
+    }
+
+    window.location.href = "category.html";
+}
+
+</script>
+
+</body>
+</html>

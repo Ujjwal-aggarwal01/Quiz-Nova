@@ -1,0 +1,262 @@
+[
+  {
+    "question": "What is a data structure?",
+    "options": ["A way to organize and store data", "A programming language", "A type of computer", "An operating system"],
+    "answer": "A way to organize and store data"
+  },
+  {
+    "question": "Which of the following is a linear data structure?",
+    "options": ["Tree", "Graph", "Array", "None"],
+    "answer": "Array"
+  },
+  {
+    "question": "Which of the following is a non-linear data structure?",
+    "options": ["Array", "Stack", "Queue", "Tree"],
+    "answer": "Tree"
+  },
+  {
+    "question": "Which data structure stores elements of the same type in contiguous memory locations?",
+    "options": ["Array", "Linked List", "Stack", "Graph"],
+    "answer": "Array"
+  },
+  {
+    "question": "What is the first index of an array in C?",
+    "options": ["0", "1", "-1", "Depends on the compiler"],
+    "answer": "0"
+  },
+  {
+    "question": "Which data structure follows LIFO?",
+    "options": ["Queue", "Stack", "Array", "Tree"],
+    "answer": "Stack"
+  },
+  {
+    "question": "What does LIFO stand for?",
+    "options": ["Last In First Out", "Last In Final Out", "First In Last Out", "List In First Out"],
+    "answer": "Last In First Out"
+  },
+  {
+    "question": "Which data structure follows FIFO?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "answer": "Queue"
+  },
+  {
+    "question": "What does FIFO stand for?",
+    "options": ["First In First Out", "First In Final Out", "Fast In Fast Out", "First Input First Output"],
+    "answer": "First In First Out"
+  },
+  {
+    "question": "Which operation adds an element to a stack?",
+    "options": ["Pop", "Push", "Delete", "Insert Front"],
+    "answer": "Push"
+  },
+  {
+    "question": "Which operation removes an element from a stack?",
+    "options": ["Push", "Pop", "Peek", "Insert"],
+    "answer": "Pop"
+  },
+  {
+    "question": "Which operation returns the top element of a stack without removing it?",
+    "options": ["Pop", "Push", "Peek", "Delete"],
+    "answer": "Peek"
+  },
+  {
+    "question": "What happens when we try to pop an empty stack?",
+    "options": ["Overflow", "Underflow", "Collision", "Compilation error"],
+    "answer": "Underflow"
+  },
+  {
+    "question": "What happens when we try to push into a full stack?",
+    "options": ["Underflow", "Overflow", "Collision", "Deletion"],
+    "answer": "Overflow"
+  },
+  {
+    "question": "Which data structure is commonly used to implement recursion?",
+    "options": ["Queue", "Stack", "Graph", "Heap"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Which data structure is commonly used for printer scheduling?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "answer": "Queue"
+  },
+  {
+    "question": "Which operation adds an element to a queue?",
+    "options": ["Dequeue", "Enqueue", "Pop", "Peek"],
+    "answer": "Enqueue"
+  },
+  {
+    "question": "Which operation removes an element from a queue?",
+    "options": ["Push", "Enqueue", "Dequeue", "Insert"],
+    "answer": "Dequeue"
+  },
+  {
+    "question": "What is the main advantage of a linked list over an array?",
+    "options": ["Fixed size", "Dynamic size", "Faster random access", "Contiguous memory"],
+    "answer": "Dynamic size"
+  },
+  {
+    "question": "What does a node in a singly linked list usually contain?",
+    "options": ["Only data", "Only a pointer", "Data and a pointer", "Only an index"],
+    "answer": "Data and a pointer"
+  },
+  {
+    "question": "In a singly linked list, what does the last node point to?",
+    "options": ["First node", "Previous node", "NULL", "Middle node"],
+    "answer": "NULL"
+  },
+  {
+    "question": "Which pointer is used to store the address of the first node of a linked list?",
+    "options": ["Head", "Tail", "Top", "Front"],
+    "answer": "Head"
+  },
+  {
+    "question": "Which pointer generally stores the address of the last node in a linked list?",
+    "options": ["Head", "Tail", "Top", "Root"],
+    "answer": "Tail"
+  },
+  {
+    "question": "Which linked list has two pointers in each node?",
+    "options": ["Singly linked list", "Doubly linked list", "Circular linked list", "Linear list"],
+    "answer": "Doubly linked list"
+  },
+  {
+    "question": "In a doubly linked list, one pointer usually points to the next node and the other points to the:",
+    "options": ["Root", "Previous node", "First node", "Array"],
+    "answer": "Previous node"
+  },
+  {
+    "question": "Which linked list has its last node connected back to the first node?",
+    "options": ["Singly linked list", "Doubly linked list", "Circular linked list", "Linear linked list"],
+    "answer": "Circular linked list"
+  },
+  {
+    "question": "Which data structure is used to represent hierarchical relationships?",
+    "options": ["Array", "Stack", "Tree", "Queue"],
+    "answer": "Tree"
+  },
+  {
+    "question": "What is the topmost node of a tree called?",
+    "options": ["Leaf", "Root", "Parent", "Child"],
+    "answer": "Root"
+  },
+  {
+    "question": "What is a node with no children called?",
+    "options": ["Root", "Parent", "Leaf", "Sibling"],
+    "answer": "Leaf"
+  },
+  {
+    "question": "A node directly connected below another node is called its:",
+    "options": ["Parent", "Child", "Root", "Leaf"],
+    "answer": "Child"
+  },
+  {
+    "question": "What is a node that has at least one child called?",
+    "options": ["Leaf", "Internal node", "Root only", "Terminal node"],
+    "answer": "Internal node"
+  },
+  {
+    "question": "How many children can a node have in a binary tree at most?",
+    "options": ["1", "2", "3", "4"],
+    "answer": "2"
+  },
+  {
+    "question": "What is a binary search tree?",
+    "options": ["A tree with no nodes", "A binary tree with ordered elements", "A graph", "A linked list"],
+    "answer": "A binary tree with ordered elements"
+  },
+  {
+    "question": "In a Binary Search Tree, values smaller than a node are generally placed in the:",
+    "options": ["Right subtree", "Left subtree", "Root", "Parent"],
+    "answer": "Left subtree"
+  },
+  {
+    "question": "In a Binary Search Tree, values greater than a node are generally placed in the:",
+    "options": ["Left subtree", "Right subtree", "Root", "Parent"],
+    "answer": "Right subtree"
+  },
+  {
+    "question": "Which traversal visits Root, Left, Right?",
+    "options": ["Inorder", "Preorder", "Postorder", "Level order"],
+    "answer": "Preorder"
+  },
+  {
+    "question": "Which traversal visits Left, Root, Right?",
+    "options": ["Preorder", "Inorder", "Postorder", "Level order"],
+    "answer": "Inorder"
+  },
+  {
+    "question": "Which traversal visits Left, Right, Root?",
+    "options": ["Preorder", "Inorder", "Postorder", "Level order"],
+    "answer": "Postorder"
+  },
+  {
+    "question": "Which traversal processes a tree level by level?",
+    "options": ["Preorder", "Inorder", "Postorder", "Level order"],
+    "answer": "Level order"
+  },
+  {
+    "question": "Which data structure is commonly used for level-order tree traversal?",
+    "options": ["Stack", "Queue", "Array only", "Linked list only"],
+    "answer": "Queue"
+  },
+  {
+    "question": "Which data structure is commonly used in Breadth-First Search?",
+    "options": ["Stack", "Queue", "Heap", "Array only"],
+    "answer": "Queue"
+  },
+  {
+    "question": "Which data structure is commonly used in Depth-First Search?",
+    "options": ["Queue", "Stack", "Heap", "Hash table"],
+    "answer": "Stack"
+  },
+  {
+    "question": "What is a graph made up of?",
+    "options": ["Only arrays", "Vertices and edges", "Only nodes", "Only pointers"],
+    "answer": "Vertices and edges"
+  },
+  {
+    "question": "What is another name for a vertex in a graph?",
+    "options": ["Node", "Pointer", "Index", "Root"],
+    "answer": "Node"
+  },
+  {
+    "question": "What connects two vertices in a graph?",
+    "options": ["Edge", "Pointer", "Array", "Stack"],
+    "answer": "Edge"
+  },
+  {
+    "question": "Which data structure is useful for implementing a priority queue?",
+    "options": ["Heap", "Stack", "Linked list only", "Array only"],
+    "answer": "Heap"
+  },
+  {
+    "question": "Which data structure is commonly used for efficient priority queue operations?",
+    "options": ["Binary heap", "Stack", "Queue", "Graph"],
+    "answer": "Binary heap"
+  },
+  {
+    "question": "What is the time complexity of accessing an element by index in an array?",
+    "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+    "answer": "O(1)"
+  },
+  {
+    "question": "What is the average time complexity of searching for an element in an unsorted array?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+    "answer": "O(n)"
+  },
+  {
+    "question": "Which sorting algorithm repeatedly compares adjacent elements?",
+    "options": ["Selection sort", "Bubble sort", "Merge sort", "Quick sort"],
+    "answer": "Bubble sort"
+  },
+  {
+    "question": "Which sorting algorithm repeatedly selects the smallest element from the unsorted portion?",
+    "options": ["Bubble sort", "Selection sort", "Merge sort", "Radix sort"],
+    "answer": "Selection sort"
+  },
+  {
+    "question": "Which sorting algorithm uses divide and conquer by splitting an array into smaller parts and merging them?",
+    "options": ["Bubble sort", "Insertion sort", "Merge sort", "Selection sort"],
+    "answer": "Merge sort"
+  }
+]

@@ -1,0 +1,267 @@
+[
+  {
+    "question": "What is the capital of India?",
+    "options": ["Mumbai", "New Delhi", "Kolkata", "Chennai"],
+    "answer": "New Delhi"
+  },
+  {
+    "question": "Which is the largest planet in our Solar System?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "answer": "Jupiter"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Jupiter", "Mercury"],
+    "answer": "Mars"
+  },
+  {
+    "question": "What is the national animal of India?",
+    "options": ["Lion", "Elephant", "Bengal Tiger", "Leopard"],
+    "answer": "Bengal Tiger"
+  },
+  {
+    "question": "What is the national bird of India?",
+    "options": ["Eagle", "Peacock", "Sparrow", "Parrot"],
+    "answer": "Peacock"
+  },
+  {
+    "question": "Which is the largest ocean in the world?",
+    "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+    "answer": "Pacific Ocean"
+  },
+  {
+    "question": "Who is known as the Father of the Nation in India?",
+    "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Sardar Patel", "B. R. Ambedkar"],
+    "answer": "Mahatma Gandhi"
+  },
+  {
+    "question": "Who was the first Prime Minister of India?",
+    "options": ["Mahatma Gandhi", "Jawaharlal Nehru", "Sardar Patel", "Rajendra Prasad"],
+    "answer": "Jawaharlal Nehru"
+  },
+  {
+    "question": "Who was the first President of India?",
+    "options": ["Dr. Rajendra Prasad", "Jawaharlal Nehru", "Dr. S. Radhakrishnan", "Zakir Husain"],
+    "answer": "Dr. Rajendra Prasad"
+  },
+  {
+    "question": "When did India become independent?",
+    "options": ["26 January 1950", "15 August 1947", "2 October 1947", "15 August 1950"],
+    "answer": "15 August 1947"
+  },
+  {
+    "question": "When is Republic Day celebrated in India?",
+    "options": ["15 August", "26 January", "2 October", "14 November"],
+    "answer": "26 January"
+  },
+  {
+    "question": "When is Independence Day celebrated in India?",
+    "options": ["26 January", "15 August", "2 October", "5 September"],
+    "answer": "15 August"
+  },
+  {
+    "question": "Who wrote the Indian national anthem?",
+    "options": ["Bankim Chandra Chattopadhyay", "Rabindranath Tagore", "Sarojini Naidu", "Subhash Chandra Bose"],
+    "answer": "Rabindranath Tagore"
+  },
+  {
+    "question": "What is the national flower of India?",
+    "options": ["Rose", "Lotus", "Sunflower", "Jasmine"],
+    "answer": "Lotus"
+  },
+  {
+    "question": "What is the national fruit of India?",
+    "options": ["Apple", "Mango", "Banana", "Orange"],
+    "answer": "Mango"
+  },
+  {
+    "question": "Which is the longest river in India?",
+    "options": ["Yamuna", "Ganga", "Godavari", "Narmada"],
+    "answer": "Ganga"
+  },
+  {
+    "question": "Which is the highest mountain peak in the world?",
+    "options": ["K2", "Mount Everest", "Kangchenjunga", "Nanda Devi"],
+    "answer": "Mount Everest"
+  },
+  {
+    "question": "Which is the largest continent?",
+    "options": ["Africa", "Europe", "Asia", "North America"],
+    "answer": "Asia"
+  },
+  {
+    "question": "Which is the smallest continent?",
+    "options": ["Europe", "Australia", "Antarctica", "South America"],
+    "answer": "Australia"
+  },
+  {
+    "question": "Which is the largest country in the world by area?",
+    "options": ["China", "United States", "Russia", "Canada"],
+    "answer": "Russia"
+  },
+  {
+    "question": "Which is the smallest country in the world?",
+    "options": ["Monaco", "Vatican City", "Maldives", "Singapore"],
+    "answer": "Vatican City"
+  },
+  {
+    "question": "Which gas is most abundant in Earth's atmosphere?",
+    "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+    "answer": "Nitrogen"
+  },
+  {
+    "question": "Which gas do humans need for respiration?",
+    "options": ["Nitrogen", "Oxygen", "Carbon dioxide", "Hydrogen"],
+    "answer": "Oxygen"
+  },
+  {
+    "question": "Which organ pumps blood throughout the human body?",
+    "options": ["Brain", "Lungs", "Heart", "Kidney"],
+    "answer": "Heart"
+  },
+  {
+    "question": "How many bones are there in an average adult human body?",
+    "options": ["186", "206", "226", "256"],
+    "answer": "206"
+  },
+  {
+    "question": "Which is the largest organ of the human body?",
+    "options": ["Heart", "Liver", "Skin", "Brain"],
+    "answer": "Skin"
+  },
+  {
+    "question": "Which organ is primarily responsible for filtering waste from the blood?",
+    "options": ["Heart", "Kidney", "Lungs", "Stomach"],
+    "answer": "Kidney"
+  },
+  {
+    "question": "What is the boiling point of water at sea level?",
+    "options": ["50°C", "75°C", "100°C", "120°C"],
+    "answer": "100°C"
+  },
+  {
+    "question": "What is the freezing point of water?",
+    "options": ["0°C", "10°C", "32°C", "100°C"],
+    "answer": "0°C"
+  },
+  {
+    "question": "Which force keeps planets in orbit around the Sun?",
+    "options": ["Magnetic force", "Friction", "Gravity", "Electric force"],
+    "answer": "Gravity"
+  },
+  {
+    "question": "What is the natural satellite of Earth?",
+    "options": ["Mars", "Moon", "Sun", "Venus"],
+    "answer": "Moon"
+  },
+  {
+    "question": "Which planet is closest to the Sun?",
+    "options": ["Venus", "Earth", "Mercury", "Mars"],
+    "answer": "Mercury"
+  },
+  {
+    "question": "Which planet is famous for its prominent rings?",
+    "options": ["Mars", "Saturn", "Venus", "Mercury"],
+    "answer": "Saturn"
+  },
+  {
+    "question": "How many planets are in our Solar System?",
+    "options": ["7", "8", "9", "10"],
+    "answer": "8"
+  },
+  {
+    "question": "What is the process by which plants make their food?",
+    "options": ["Respiration", "Photosynthesis", "Digestion", "Transpiration"],
+    "answer": "Photosynthesis"
+  },
+  {
+    "question": "Which part of a plant absorbs water from the soil?",
+    "options": ["Stem", "Leaf", "Root", "Flower"],
+    "answer": "Root"
+  },
+  {
+    "question": "Which vitamin is mainly produced in the skin through sunlight exposure?",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "answer": "Vitamin D"
+  },
+  {
+    "question": "Which blood cells help fight infections?",
+    "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+    "answer": "White blood cells"
+  },
+  {
+    "question": "Which blood group is commonly known as the universal donor for red blood cells?",
+    "options": ["A positive", "B positive", "AB positive", "O negative"],
+    "answer": "O negative"
+  },
+  {
+    "question": "Which instrument is used to measure temperature?",
+    "options": ["Barometer", "Thermometer", "Hygrometer", "Anemometer"],
+    "answer": "Thermometer"
+  },
+  {
+    "question": "Which instrument is used to measure atmospheric pressure?",
+    "options": ["Thermometer", "Barometer", "Speedometer", "Voltmeter"],
+    "answer": "Barometer"
+  },
+  {
+    "question": "Which metal is liquid at room temperature?",
+    "options": ["Iron", "Copper", "Mercury", "Aluminium"],
+    "answer": "Mercury"
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Ag", "Au", "Gd", "Go"],
+    "answer": "Au"
+  },
+  {
+    "question": "What is the chemical symbol for silver?",
+    "options": ["Si", "Ag", "Au", "Sr"],
+    "answer": "Ag"
+  },
+  {
+    "question": "What is H2O commonly known as?",
+    "options": ["Oxygen", "Hydrogen", "Water", "Carbon dioxide"],
+    "answer": "Water"
+  },
+  {
+    "question": "Which is the hardest natural substance?",
+    "options": ["Iron", "Diamond", "Gold", "Quartz"],
+    "answer": "Diamond"
+  },
+  {
+    "question": "Who invented the telephone?",
+    "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "James Watt"],
+    "answer": "Alexander Graham Bell"
+  },
+  {
+    "question": "Who is widely credited with inventing the practical incandescent light bulb?",
+    "options": ["Thomas Edison", "Albert Einstein", "Isaac Newton", "Alexander Graham Bell"],
+    "answer": "Thomas Edison"
+  },
+  {
+    "question": "Which device is used to measure electric current?",
+    "options": ["Voltmeter", "Ammeter", "Barometer", "Thermometer"],
+    "answer": "Ammeter"
+  },
+  {
+    "question": "Which device is used to measure electrical voltage?",
+    "options": ["Ammeter", "Voltmeter", "Galvanometer", "Barometer"],
+    "answer": "Voltmeter"
+  },
+  {
+    "question": "What does WWW stand for?",
+    "options": ["World Wide Web", "World Web Window", "Wide World Web", "Web World Wide"],
+    "answer": "World Wide Web"
+  },
+  {
+    "question": "What does RAM stand for?",
+    "options": ["Random Access Memory", "Read Access Memory", "Rapid Access Machine", "Random Application Memory"],
+    "answer": "Random Access Memory"
+  },
+  {
+    "question": "What does AI stand for?",
+    "options": ["Automated Internet", "Artificial Intelligence", "Advanced Information", "Automatic Integration"],
+    "answer": "Artificial Intelligence"
+  }
+]

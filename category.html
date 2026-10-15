@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>QuizNova - Categories</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <h2>🧠 QuizNova</h2>
+
+    <div>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="leaderboard.html">
+            Leaderboard
+        </a>
+
+    </div>
+
+</nav>
+
+
+<section class="category-section">
+
+    <h1>
+        Choose Your Quiz
+    </h1>
+
+    <p>
+        Select a category to start your quiz
+    </p>
+
+
+    <div class="category-container">
+
+
+        <div class="category-card">
+
+            <h2>
+                🧮 Mathematics
+            </h2>
+
+            <p>
+                Test your mathematical knowledge.
+            </p>
+
+            <button
+                onclick="startQuiz('math')"
+            >
+                Start Quiz
+            </button>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <h2>
+                💻 Programming
+            </h2>
+
+            <p>
+                Test your programming skills.
+            </p>
+
+            <button
+                onclick="startQuiz('programming')"
+            >
+                Start Quiz
+            </button>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <h2>
+                🗂️ Data Structures
+            </h2>
+
+            <p>
+                Test your knowledge of data structures.
+            </p>
+
+            <button
+                onclick="startQuiz('ds')"
+            >
+                Start Quiz
+            </button>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <h2>
+                🌎 General Knowledge
+            </h2>
+
+            <p>
+                Challenge your general knowledge.
+            </p>
+
+            <button
+                onclick="startQuiz('gk')"
+            >
+                Start Quiz
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<script>
+
+
+const isLoggedIn =
+    localStorage.getItem("isLoggedIn");
+
+
+if (isLoggedIn !== "true") {
+
+    alert(
+        "Please login first to access quiz categories."
+    );
+
+    window.location.href =
+        "login.html";
+
+}
+
+
+function startQuiz(category) {
+
+    const loginStatus =
+        localStorage.getItem("isLoggedIn");
+
+
+    if (loginStatus !== "true") {
+
+        alert(
+            "Please login first to start the quiz."
+        );
+
+        window.location.href =
+            "login.html";
+
+        return;
+
+    }
+
+
+    localStorage.setItem(
+        "selectedCategory",
+        category
+    );
+
+
+    localStorage.setItem(
+        "category",
+        category
+    );
+
+
+    window.location.href =
+        "quiz.html";
+
+}
+
+
+</script>
+
+</body>
+
+</html>

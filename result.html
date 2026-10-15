@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>QuizNova - Result</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="result-container">
+
+    <h1>🎉 Quiz Completed!</h1>
+
+    <h2 id="playerName"></h2>
+
+    <h2>Your Score</h2>
+
+    <h1 id="finalScore">0/0</h1>
+
+    <p id="percentage"></p>
+
+    <h2 id="message"></h2>
+
+    <p id="saveMessage"></p>
+
+
+    <button onclick="restartQuiz()">
+        🔄 Restart Quiz
+    </button>
+
+
+    <button onclick="chooseAnotherQuiz()">
+        📚 Choose Another Quiz
+    </button>
+
+
+    <button onclick="viewLeaderboard()">
+        🏆 View Leaderboard
+    </button>
+
+
+    <button onclick="goHome()">
+        🏠 Back to Home
+    </button>
+
+</div>
+
+
+<script>
+
+const isLoggedIn =
+    localStorage.getItem("isLoggedIn");
+
+
+if (isLoggedIn !== "true") {
+
+    alert(
+        "Please login first."
+    );
+
+    window.location.href =
+        "login.html";
+
+}
+
+
+const userName =
+    localStorage.getItem(
+        "userName"
+    );
+
+
+const userId =
+    localStorage.getItem(
+        "userId"
+    );
+
+
+const score =
+    Number(
+        localStorage.getItem("score")
+    ) || 0;
+
+
+const total =
+    Number(
+        localStorage.getItem(
+            "totalQuestions"
+        )
+    ) || 0;
+
+
+const category =
+    localStorage.getItem(
+        "category"
+    ) ||
+    localStorage.getItem(
+        "quizCategory"
+    ) ||
+    "";
+
+
+document.getElementById(
+    "playerName"
+).textContent =
+    "Well done, " +
+    (userName || "Player") +
+    "!";
+
+
+document.getElementById(
+    "finalScore"
+).textContent =
+    score + "/" + total;
+
+
+let percentage = 0;
+
+
+if (total > 0) {
+
+    percentage =
+        Math.round(
+            (score / total) * 100
+        );
+
+}
+
+
+document.getElementById(
+    "percentage"
+).textContent =
+    "Percentage: " +
+    percentage +
+    "%";
+
+
+let message = "";
+
+
+if (percentage >= 80) {
+
+    message =
+        "🏆 Excellent Performance!";
+
+}
+
+else if (percentage >= 60) {
+
+    message =
+        "👏 Great Job!";
+
+}
+
+else if (percentage >= 40) {
+
+    message =
+        "👍 Good Attempt!";
+
+}
+
+else {
+
+    message =
+        "💪 Keep Practicing!";
+
+}
+
+
+document.getElementById(
+    "message"
+).textContent =
+    message;
+
+
+
+async function saveQuizAttempt() {
+
+    const saveMessage =
+        document.getElementById(
+            "saveMessage"
+        );
+
+
+    if (!userId) {
+
+        console.log(
+            "User ID not found."
+        );
+
+        return;
+
+    }
+
+
+    if (!category) {
+
+        console.log(
+            "Quiz category not found."
+        );
+
+        return;
+
+    }
+
+
+    try {
+
+        const response =
+            await fetch(
+                "/api/quiz-attempt",
+                {
+
+                    method:
+                        "POST",
+
+                    headers: {
+
+                        "Content-Type":
+                            "application/json"
+
+                    },
+
+                    body:
+                        JSON.stringify({
+
+                            userId:
+                                Number(userId),
+
+                            category:
+                                category,
+
+                            score:
+                                score,
+
+                            totalQuestions:
+                                total
+
+                        })
+
+                }
+            );
+
+
+        const data =
+            await response.json();
+
+
+        if (response.ok) {
+
+            sessionStorage.setItem(
+                "savedAttempt",
+                currentAttempt
+            );
+
+
+            saveMessage.textContent =
+                "✅ Result saved successfully.";
+
+
+            console.log(
+                data.message
+            );
+
+        }
+
+        else {
+
+            saveMessage.textContent =
+                "⚠️ Result could not be saved.";
+
+
+            console.log(
+                data.message
+            );
+
+        }
+
+    }
+
+    catch (error) {
+
+        saveMessage.textContent =
+            "⚠️ Unable to save result.";
+
+
+        console.log(
+            "Save result error:",
+            error.message
+        );
+
+    }
+
+}
+
+
+
+const currentAttempt =
+    sessionStorage.getItem(
+        "currentAttempt"
+    );
+
+
+const savedAttempt =
+    sessionStorage.getItem(
+        "savedAttempt"
+    );
+
+
+if (
+    currentAttempt !== savedAttempt
+) {
+
+    saveQuizAttempt();
+
+}
+
+
+
+function restartQuiz() {
+
+    window.location.href =
+        "quiz.html";
+
+}
+
+
+function chooseAnotherQuiz() {
+
+    window.location.href =
+        "category.html";
+
+}
+
+
+function viewLeaderboard() {
+
+    window.location.href =
+        "leaderboard.html";
+
+}
+
+
+function goHome() {
+
+    window.location.href =
+        "index.html";
+
+}
+
+</script>
+
+</body>
+
+</html>
